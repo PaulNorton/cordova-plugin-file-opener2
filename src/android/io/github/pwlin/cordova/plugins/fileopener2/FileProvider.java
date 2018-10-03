@@ -45,7 +45,7 @@ public class FileProvider extends android.support.v4.content.FileProvider {
         String path = uri.toString();
 
         if(contentType.equals("application/pdf") && !path.endsWith(".pdf")) {
-            path = path.replace(".opener.provider", ".opener.provider/extension-added");
+            path = path.replace(".opener.provider/files", ".opener.provider/files/fileopener2-add-pdf-extension");
             path = path + ".pdf";
         }
 
@@ -79,8 +79,8 @@ public class FileProvider extends android.support.v4.content.FileProvider {
     private Uri massageUri(Uri uri) {
         String path = uri.toString();
         
-        if(path.contains(".opener.provider/extension-added")) {
-            path = path.replace(".opener.provider/extension-added", ".opener.provider");
+        if(path.contains(".opener.provider/files/fileopener2-add-pdf-extension/")) {
+            path = path.replace(".opener.provider/files/fileopener2-add-pdf-extension", ".opener.provider/files");
             path = path.substring(0, path.lastIndexOf("."));
         }
 
