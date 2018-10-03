@@ -8,6 +8,9 @@ A File Opener Plugin for Cordova (The Original Version)
 This plugin will open a file on your device file system with its default application.
 
 Current Version: 2.0.19
+
+
+Support added for opening PDFs without ".pdf" extension in Adobe Acrobat on Android.
 ----------------
 
 Requirements
